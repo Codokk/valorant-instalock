@@ -5,12 +5,14 @@ using valorant_instalock.Models;
 
 namespace valorant_instalock.Classes
 {
+    
     internal static class ImageRecognition
     {
         internal static Coordinate GetCoordinates(Image image)
         {
             Image<Bgr, byte> source = new Image<Bgr, byte>(new Bitmap(ScreenCapture.CaptureScreen()));
             Image<Bgr, byte> template = new Image<Bgr, byte>(new Bitmap(image));
+            // Need to resize image to 1080p
 
             using (Image<Gray, float> result = source.MatchTemplate(template, Emgu.CV.CvEnum.TemplateMatchingType.CcoeffNormed))
             {

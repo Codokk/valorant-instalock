@@ -10,7 +10,10 @@ namespace valorant_instalock.Classes
         {
             return CaptureWindow(User32.GetDesktopWindow());
         }
-
+        public static Image ResizeImage(Image imgToResize, Size size)
+        {
+            return (Image)(new Bitmap(imgToResize, size));
+        }
         public static Image CaptureWindow(IntPtr handle)
         {
             IntPtr hdcSrc = User32.GetWindowDC(handle);
@@ -27,7 +30,7 @@ namespace valorant_instalock.Classes
             User32.ReleaseDC(handle, hdcSrc);
             Image img = Image.FromHbitmap(hBitmap);
             GDI32.DeleteObject(hBitmap);
-            return img;
+            return ResizeImage(img, new Size(1920, 1080));
         }
     }
 }

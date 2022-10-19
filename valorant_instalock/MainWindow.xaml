@@ -13,7 +13,7 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBlock Text="Agents:"
+        <TextBlock Text="Rob-An-Agent:"
                    VerticalAlignment="Top"
                    HorizontalAlignment="Left"
                    Margin="16 8 0 0"
@@ -84,28 +84,43 @@
                 Margin="450 170 0 0"
                 IsEnabled="false"
                 Click="btn_Stop_Click"/>
-            <TextBlock Text="Make sure your Valorant settings are as follows:"
+            <TextBlock Text="Only works with the following:"
                        FontSize="20"
                        FontWeight="Light"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        FontStyle="Italic"
-                       Margin="330 310 0 0"
+                       Margin="330 280 0 0"
                        Foreground="Indigo"/>
             <TextBlock Text="Display Mode: Fullscreen or Windowed Fullscreen"
                        FontSize="17"
                        FontWeight="Bold"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
+                       Margin="330 315 0 0"
+                       Foreground="CornflowerBlue"/>
+            <TextBlock Text="Resolution Must Be 16:9"
+                       FontSize="17"
+                       FontWeight="Bold"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
                        Margin="330 345 0 0"
                        Foreground="CornflowerBlue"/>
-            <TextBlock Text="Resolution: 1920x1080"
+			<TextBlock Text="NOTHING CAN BE ON TOP OF VALORANT"
                        FontSize="17"
                        FontWeight="Bold"
                        VerticalAlignment="Top"
                        HorizontalAlignment="Left"
                        Margin="330 375 0 0"
                        Foreground="CornflowerBlue"/>
+			<TextBlock Text="Cody Loves you ♥"
+                       FontSize="20"
+                       FontWeight="Light"
+                       VerticalAlignment="Top"
+                       HorizontalAlignment="Left"
+                       FontStyle="Italic"
+                       Margin="540 20 0 0"
+                       Foreground="Indigo"/>
         </Grid>
     </Grid>
 </Window>

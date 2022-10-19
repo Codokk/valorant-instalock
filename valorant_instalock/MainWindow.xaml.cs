@@ -16,7 +16,7 @@ namespace valorant_instalock
         public MainWindow()
         {
             InitializeComponent();
-            Agent.SelectedAgent = Agent.GetAgentCoordinatesByName("brimstone");
+            Agent.SelectedAgent = Agent.GetAgentCoordinatesByName("astra");
         }
 
         Timer recognitionTimer = new Timer() { Interval = 300 };
